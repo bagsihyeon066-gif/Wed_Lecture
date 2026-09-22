@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 웹 프로필</title>
+</head>
+<body>
+
+    <!-- header 영역 -->
+    <header>
+        <h1>나의 웹 프로필</h1>
+        <p>HTML 기본 태그를 활용하여 만든 웹페이지입니다.</p>
+    </header>
+
+    <!-- nav 영역 -->
+    <nav>
+        <a href="#intro">소개</a> | 
+        <a href="#interest">관심 분야</a> | 
+        <a href="#schedule">학습 계획</a> | 
+        <a href="#contact">문의하기</a>
+    </nav>
+
+    <hr>
+     <!-- main 영역 -->
+    <main>
+        <!-- 1. 자기소개 영역 -->
+        <section id="intro">
+            <h2>1. 자기소개</h2>
+            <article>
+                <p>안녕하세요!</p>
+                <p>저는 <strong>웹 프로그래밍</strong>을 공부하고 있습니다.</p>
+                <p>현재 <strong>HTML5</strong>의 기본 구조와 다양한 태그를 학습하고 있습니다.</p>
+                <p>앞으로 CSS와 JavaScript도 공부할 예정입니다.</p>
+                <br>
+                <img src="\dudu.jpg" alt="프로필 사진" width="200">
+            </article>
+        </section>
+        <!-- 2. 관심 분야 영역 -->
+        <section id="interest">
+            <h2>2. 관심 분야</h2>
+            <article>
+                <h3>관심 있는 기술</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                </ul>
+
+                <h3>학습 순서</h3>
+                <ol>
+                    <li>HTML 배우기</li>
+                    <li>CSS 배우기</li>
+                    <li>JavaScript 배우기</li>
+                    <li>웹 프로젝트 만들기</li>
+                </ol>
+            </article>
+        </section>
+
+        <hr>
+        <!-- 4. 학습 계획 영역 -->
+        <section id="schedule">
+            <h2>4. 학습 계획</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>주차</th>
+                        <th>학습 내용</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1주차</td>
+                        <td>HTML 기본</td>
+                        <td>학습 완료</td>
+                    </tr>
+                    <tr>
+                        <td>2주차</td>
+                        <td>CSS 기본</td>
+                        <td>학습 예정</td>
+                    </tr>
+                    <tr>
+                        <td>3주차</td>
+                        <td>JavaScript 기본</td>
+                        <td>학습 예정</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+       <!-- 5. 문의하기 영역 -->
+        <section id="contact">
+            <h2>5. 문의하기</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="username">이름</label><br>
+                    <input type="text" id="username" name="username" placeholder="이름을 입력하세요">
+                </p>
+                <p>
+                    <label for="password">비밀번호</label><br>
+                    <input type="password" id="password" name="password"placeholder="비밀번호를 입력하세요">
+                </p>
+                <p>
+                    <label for="email">이메일</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@email.com">
+                </p>
+                <p>
+                    <label for="birth">생년월일</label><br>
+                    <input type="date" id="birth" name="birth">
+                </p>
+
+                <p>
+                    <label for="grade">학년</label><br>
+                    <input type="number" id="grade" name="grade">
+                </p>
+
+                <p>
+                    관심 분야<br>
+                    <input type="radio" id="frontend" name="field" value="frontend">
+                    <label for="frontend">프론트엔드</label>
+                    <input type="radio" id="backend" name="field" value="backend">
+                    <label for="backend">백엔드</label>
+                    <input type="radio" id="ai" name="field" value="ai">
+                    <label for="ai">AI</label>
+                </p>
+
+                <p>
+                    배우고 싶은 기술<br>
+                    <input type="checkbox" id="html" name="tech" value="html">
+                    <label for="html">HTML</label>
+                    <input type="checkbox" id="css" name="tech" value="css">
+                    <label for="css">CSS</label>
+                    <input type="checkbox" id="js" name="tech" value="js">
+                    <label for="js">JavaScript</label>
+                </p>
+
+                <p>
+                    <label for="level">웹 프로그래밍 수준</label><br>
+                    <select id="level" name="level">
+                        <option value="beginner" selected>초급</option>
+                        <option value="intermediate">중급</option>
+                        <option value="advanced">고급</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">문의 내용</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40" placeholder="문의 내용을 입력하세요"></textarea>
+                </p>
+
+                <p>
+                    <button type="submit">제출</button>
+                    <button type="reset">초기화</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <!-- aside 영역 -->
+    <aside>
+        <h3>참고 사이트</h3>
+        <p>HTML에 대해 더 공부하고 싶다면 ?</p>
+    </aside>
+
+    <hr>
+
+    <!-- footer 영역 -->
+    <footer>
+        <p>Copyright © 2026 Web Programming</p>
+        <p>HTML 종합 실습 페이지</p>
+    </footer>
+
+    </body>
+</html>
