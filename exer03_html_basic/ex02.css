@@ -1,0 +1,121 @@
+body {
+    background-color: #f2f4f8;
+    font-family: 'Malgun Gothic', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 1px solid #f3f2f2;
+}
+
+/* 헤더 */
+header {
+    background-color: #031938;
+    color: rgb(228, 220, 220);
+    text-align: center;
+    padding: 30px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+
+nav {
+    background-color: #14345f;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+
+.content-wrapper {
+    display: flex;
+    padding: 40px;
+    min-height: 350px;
+}
+
+.main-section {
+    flex: 3;
+    padding-right: 40px;
+}
+
+.main-section h2 {
+    color: #1a3c6c;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.main-section p {
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.quick-menu {
+    flex: 1.2;
+    background-color: #041f41;
+    padding: 20px;
+    border-left: 1px solid #e1e8f0;
+}
+
+.quick-menu h3 {
+    font-size: 16px;
+    color: #edeff3;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.quick-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-menu li {
+    background-color: rgb(233, 230, 230);
+    border: 1px solid #d5def0;
+    margin-bottom: 8px;
+    padding: 10px;
+    text-align: center;
+    color: #0f0000;
+    font-size: 14px;
+}
+
+/* 푸터 */
+footer {
+    background-color: #2b3742;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 13px;
+}
