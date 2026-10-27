@@ -1,9 +1,27 @@
-//  function f(x){
-//         return x*x;
-//     };
-//     alert(f(3));
+//  let funcNoname = function () {
+// //     alert('함수_01');
+// //     alert('함수_02');
+// // }
 
-    let fun = function(){
+// // //funcNoname();
+
+// // alert(typeof(funcNoname) + ' : ' + funcNoname);
+
+
+// // function funcName(){
+// //     alert('함수_01');
+// //     alert('함수_02');
+// // };
+
+// // alert(typeof(funcName) + ' : ' + funcName);
+
+// // function f(x) {
+// //     return x * x;
+// // };
+
+// // alert(f(3));
+
+let fun = function(){
     alert('함수호출');
 };
 
