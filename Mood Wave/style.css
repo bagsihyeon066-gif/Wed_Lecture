@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: 'Malgun Gothic', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: dimgray;
+    padding: 15px 30px;
+    border-bottom: 1px solid gray;
+}
+
+header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+}
+
+nav button {
+    background: transparent;
+    border: none;
+    color: lightgray;
+    font-size: 14px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    color: white;
+    background: gray;
+}
+
+nav button.active {
+    background: royalblue;
+    color: white;
+    font-weight: 600;
+}
+
+main {
+    width: 700px;
+    margin: 40px auto;
+}
+
+main h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: lightgray;
+}
+
+#playlist-container {
+    background: darkslategray;
+    border: 1px solid rgb(29, 26, 26);
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.song-item {
+    padding: 12px 0;
+    border-bottom: 1px solid gray;
+}
+
+.song-item:last-child {
+    border-bottom: none;
+}ㄴ
+
+.song-title {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.song-artist {
+    font-size: 13px;
+    color: silver;
+}

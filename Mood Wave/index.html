@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그럼 이 노래는 어때? - 상황별 플레이리스트</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 상단 네비게이션 바 (멜론/유튜브 뮤직 스타일) -->
+    <header class="navbar">
+        <div class="nav-left">
+            <h1 class="logo">그럼 이 노래는 어때?</h1>
+        </div>
+        <nav class="nav-menu">
+            <button class="menu-btn active" data-mood="workout">운동할 때</button>
+            <button class="menu-btn" data-mood="travel">여행을 떠날 때</button>
+            <button class="menu-btn" data-mood="comfort">위로가 필요할 때</button>
+            <button class="menu-btn" data-mood="breakup">헤어졌을 때</button>
+            <button class="menu-btn" data-mood="popular">인기곡</button>
+        </nav>
+    </header>
+
+    <!-- 메인 컨텐츠 영역 -->
+    <main class="main-container">
+        <section class="playlist-section">
+            <div class="section-title">
+                <h2>🎵 추천 플레이리스트</h2>
+                <p>선택하신 상황에 딱 맞는 곡들을 모았습니다.</p>
+            </div>
+
+            <div id="playlist-container">
+                <!-- 자바스크립트로 동적 렌더링 -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
