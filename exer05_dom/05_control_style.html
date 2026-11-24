@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+    <!-- <script>
+        window.onload = function () {
+            let output = '';
+            for (let i = 0; i < 256; i++) {
+                output += '<div></div>';
+            }
+            document.body.innerHTML = output;
+
+            let divs = document.querySelectorAll('div');
+            for (let i = 0; i < divs.length; i++) {
+                let div = divs[i];
+                div.style.height = '2px';
+                div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+            }
+        };
+    </script> -->
+    <script>
+        window.onload= function(){
+            let attri = document.getElementById("text");
+            // 기존 속성 값 가져오기
+
+            let color =attri.getAttribute("style");
+
+            attri.setAttribute("style","color:red;");
+        }
+    </script>
+</head>
+<body>
+    <p id="text" style="color: blue;">안냐떼여</p>
+
+</body>
+</html>

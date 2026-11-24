@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Basic</title>
+    <script>
+        // //이벤트를 연결합니다.
+        // winndow.onload = function(){
+        //     //문서 객체를 선택합니다.
+        //     let button=document.getElementById('button');
+        //     //이벤트르 연결합니다.
+        //     button.onclick + function(){
+        //         alert('click');
+        //     }
+        // };
+        
+    </script>
+</head>
+<body>
+    <!-- <button onclick="alert('click')">버튼</button>
+     <button id="button">버튼</button> -->
+    <!-- <h2>JavaScript 클릭 이벤트</h2>
+
+    <p id="message">버튼을 클릭해보세요.</p>
+    <button id="btn">클릭하기</button>
+
+    <script>
+        let btn = document.querySelector("#btn");
+        let message = document.querySelector("#message");
+
+        btn.addEventListener("click", function() {
+            message.textContent = "버튼이 클릭되었습니다!";
+            message.style.color = "blue";
+            document.body.style.backgroundColor = "lightyellow";
+        });
+    </script> -->
+    <div id="box" style="width:300px; height:150px; background-color: lightgray; text-align:center;">
+        마우스를 올려보세요!
+    </div>
+
+    <script>
+        let box = document.querySelector("#box");
+
+        // 마우스를 올렸을 때
+        box.addEventListener("mouseover", function() {
+            box.style.backgroundColor = "skyblue";
+            box.textContent = "마우스가 올라왔습니다!";
+        });
+
+        // 마우스가 벗어났을 때
+        box.addEventListener("mouseout", function() {
+            box.style.backgroundColor = "lightgray";
+            box.textContent = "마우스를 올려보세요!";
+        });
+    </script>
+</body>
+</html>
