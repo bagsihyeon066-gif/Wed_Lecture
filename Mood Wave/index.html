@@ -3,37 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>그럼 이 노래는 어때? - 상황별 플레이리스트</title>
+    <title>오늘의 플레이리스트</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- 상단 네비게이션 바 (멜론/유튜브 뮤직 스타일) -->
-    <header class="navbar">
-        <div class="nav-left">
-            <h1 class="logo">그럼 이 노래는 어때?</h1>
-        </div>
-        <nav class="nav-menu">
-            <button class="menu-btn active" data-mood="workout">운동할 때</button>
-            <button class="menu-btn" data-mood="travel">여행을 떠날 때</button>
-            <button class="menu-btn" data-mood="comfort">위로가 필요할 때</button>
-            <button class="menu-btn" data-mood="breakup">헤어졌을 때</button>
-            <button class="menu-btn" data-mood="popular">인기곡</button>
+    <div id="wrap">
+        <!-- 왼쪽 사이드바 -->
+        <nav id="sidebar">
+            <div class="logo">
+                <h2>오늘의 플리</h2>
+            </div>
+            <ul class="menu-list">
+                <li><button class="menu-btn active" id="menu-all">전체 추천곡</button></li>
+                <li><button class="menu-btn" id="menu-study">공부 / 집중</button></li>
+                <li><button class="menu-btn" id="menu-drive">드라이브 / 신남</button></li>
+                <li><button class="menu-btn" id="menu-dawn">새벽 감성</button></li>
+            </ul>
         </nav>
-    </header>
 
-    <!-- 메인 컨텐츠 영역 -->
-    <main class="main-container">
-        <section class="playlist-section">
-            <div class="section-title">
-                <h2>🎵 추천 플레이리스트</h2>
-                <p>선택하신 상황에 딱 맞는 곡들을 모았습니다.</p>
+        <!-- 오른쪽 메인 콘텐츠 -->
+        <section id="main-content">
+            <h2 id="category-title">전체 추천 플레이리스트</h2>
+            <p id="status-msg">노래 박스에 마우스를 올리거나 [재생하기] 버튼을 눌러보세요.</p>
+
+            <!-- 유튜브 영상 플레이어 (주소는 공백으로 둠) -->
+            <div class="player-box">
+                <iframe id="video-player" width="100%" height="360"
+                    src=""
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
             </div>
 
-            <div id="playlist-container">
-                <!-- 자바스크립트로 동적 렌더링 -->
+            <!-- 노래 박스 4개 -->
+            <div class="song-list">
+                <div class="song-box" id="box-1">
+                    <div class="song-info">
+                        <h3 id="title-1">1. 추천 노래 1</h3>
+                        <p id="desc-1">노래 설명을 입력하세요.</p>
+                    </div>
+                    <button class="play-btn" id="play-1">재생하기</button>
+                </div>
+
+                <div class="song-box" id="box-2">
+                    <div class="song-info">
+                        <h3 id="title-2">2. 추천 노래 2</h3>
+                        <p id="desc-2">노래 설명을 입력하세요.</p>
+                    </div>
+                    <button class="play-btn" id="play-2">재생하기</button>
+                </div>
+
+                <div class="song-box" id="box-3">
+                    <div class="song-info">
+                        <h3 id="title-3">3. 추천 노래 3</h3>
+                        <p id="desc-3">노래 설명을 입력하세요.</p>
+                    </div>
+                    <button class="play-btn" id="play-3">재생하기</button>
+                </div>
+
+                <div class="song-box" id="box-4">
+                    <div class="song-info">
+                        <h3 id="title-4">4. 추천 노래 4</h3>
+                        <p id="desc-4">노래 설명을 입력하세요.</p>
+                    </div>
+                    <button class="play-btn" id="play-4">재생하기</button>
+                </div>
             </div>
         </section>
-    </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
